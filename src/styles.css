@@ -1,0 +1,28 @@
+:root{--bg:#f8f9fa;--card:#fff;--text:#111827;--muted:#6b7280;--line:#e5e7eb;--red:#e11d48;--redbg:#fff1f2;--redline:#fecdd3;--green:#047857;--greenbg:#ecfdf5;--grey:#f3f4f6}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.45}
+.wrap{max-width:900px;margin:0 auto;padding:20px 16px 48px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.logo{font-size:26px;font-weight:800;letter-spacing:-.5px}.logo b{color:var(--red)}
+.demo{font-size:13px;background:var(--grey);padding:3px 10px;border-radius:99px;margin-left:8px;font-weight:600}
+.tab{font:inherit;font-weight:600;border:0;background:none;color:var(--muted);padding:6px 12px;cursor:pointer;border-radius:8px}.tab.on{background:var(--redbg);color:var(--red)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin-top:18px}
+h1{text-align:center;font-size:26px;margin:6px 0 4px}.subt{text-align:center;color:var(--muted);margin:0 0 16px}
+.steps{display:flex;flex-wrap:wrap;gap:8px;background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px}
+.chip{font-size:13px;font-weight:600;padding:7px 12px;border-radius:10px;border:1px solid var(--line);background:var(--grey);color:var(--muted)}.chip.on{background:var(--card);color:var(--red);border-color:var(--redline)}
+.mini{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:14px}
+.box{border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:13.5px}.box h4{margin:0 0 6px;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px}
+.big{font-size:28px;font-weight:800}.big small{font-size:12px;color:var(--red)}.fl{display:flex;justify-content:space-between;color:var(--muted);font-size:12.5px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-top:12px}.row.dim{opacity:.65}
+.nm{font-weight:700;font-size:17px}.sub{color:var(--muted);font-size:13.5px;margin-top:2px}.why{font-size:13px;margin-top:6px}
+.badge{font-size:12.5px;font-weight:600;padding:2px 10px;border-radius:99px;margin-left:8px;background:var(--redbg);color:var(--red)}.badge.g{background:var(--greenbg);color:var(--green)}.badge.x{background:var(--grey);color:var(--muted)}
+.r{display:flex;align-items:center;gap:16px}.sc{text-align:right;font-size:12.5px;color:var(--muted)}.sc b{display:block;font-size:24px;color:var(--text)}
+.btn{font:inherit;font-weight:700;font-size:14px;border:0;border-radius:10px;padding:9px 16px;background:var(--red);color:#fff;cursor:pointer}.btn:disabled{opacity:.4;cursor:default}
+.btn.ghost{background:var(--grey);color:var(--text)}.btn.sm{margin-top:8px;padding:6px 12px;font-size:13px}.btn.full{width:100%;margin-top:18px}
+.lnk{background:none;border:0;color:var(--red);font:inherit;font-size:12.5px;font-weight:600;padding:6px 0 0;cursor:pointer}
+.bar{display:grid;grid-template-columns:130px 1fr 54px;gap:8px;align-items:center;font-size:12px;margin-top:5px;color:var(--muted)}.bar i{height:7px;border-radius:9px;background:var(--grey);overflow:hidden}.bar s{display:block;height:100%;background:var(--red)}
+.sec{margin:22px 0 0;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;font-weight:700}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form.one{grid-template-columns:1fr;margin-bottom:6px}
+label{font-size:13px;font-weight:600;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+select,input{font:inherit;padding:10px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--text)}
+.nav{display:flex;gap:8px;margin-top:12px}.no{color:var(--red);font-weight:600;font-size:13px}.ok{color:var(--green);font-weight:600}
+@media(max-width:560px){.form{grid-template-columns:1fr}.r{width:100%;justify-content:space-between}}
