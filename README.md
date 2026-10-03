@@ -35,13 +35,14 @@ In an emergency, hospitals often search for blood donors manually. This is slow 
 3. **Scoring:** remaining donors get a weighted score. Distance matters more when the request is critical. Scarce universal donors (O-) are held back unless the case is critical. Donors who were asked often recently are ranked lower to share the load.
 4. **Notification plan:** donors are added from the top of the ranking until the combined chance that enough of them accept reaches 90%.
 
-All of this logic is in `lifelink-nexus-frontend/src/engine.js`.
+All of this logic is in `src/engine.js`.
 
 ## Run the frontend
 
 Requires Node.js.
 
 ```bash
+git clone https://github.com/ANUBHARATHISS/lifelink-nexus-frontend.git
 cd lifelink-nexus-frontend
 npm install
 npm run dev
@@ -52,8 +53,7 @@ Then open http://localhost:5173
 ## Project structure
 
 ```
-lifelink-nexus-frontend/
-  src/
+src/
     main.jsx        entry point
     App.jsx         top-level component, app state (useReducer), tabs
     Hospital.jsx    Hospital Portal screen
